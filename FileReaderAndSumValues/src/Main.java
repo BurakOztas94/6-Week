@@ -26,6 +26,7 @@ public class Main {
             BufferedReader bufferedReader = new BufferedReader (fReader);
             String line;
 
+
             int sum = 0;
 
             while (( line = bufferedReader.readLine () ) != null)   //loop checks all filled line until hits null
@@ -35,6 +36,9 @@ public class Main {
 
 
                 }
+
+            fReader.close ();
+            bufferedReader.close ();
             System.out.println ("The sum of the values which are  inside of the created text is : " + sum);     // prints sum
 
 
